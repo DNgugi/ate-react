@@ -31,17 +31,18 @@ const CtaSection: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              to="/contact"
+              to="https://calendly.com/ateamedventures-info/30min"
               className="btn-primary bg-white text-primary-700 hover:bg-gray-100"
+              target="_blank"
             >
-              Schedule a Consultation
+              Schedule A Free Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               to="/services"
               className="btn-secondary bg-transparent text-white border-white hover:bg-white/10"
             >
-              Explore Our Services
+              Explore Our Programs
             </Link>
           </div>
 

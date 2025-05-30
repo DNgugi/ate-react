@@ -512,7 +512,9 @@ const ServicesPage: React.FC = () => {
                   />
                   <div>
                     <p className="font-bold text-gray-900">Corina W.</p>
-                    <p className="text-primary-600">Parent, Family Edventure Camp</p>
+                    <p className="text-primary-600">
+                      Parent, Family Edventure Camp
+                    </p>
                   </div>
                 </div>
               </div>
@@ -543,9 +545,11 @@ const ServicesPage: React.FC = () => {
                 Contact us today to discuss your team's needs and discover how
                 our customized services can help you achieve your goals.
               </p>
+
               <Link
-                to="/contact"
+                to="https://calendly.com/ateamedventures-info/30min"
                 className="btn-primary bg-white text-primary-700 hover:bg-gray-100 inline-flex items-center"
+                target="_blank"
               >
                 Schedule a Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />

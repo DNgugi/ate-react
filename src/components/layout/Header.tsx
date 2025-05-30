@@ -71,8 +71,12 @@ const Header: React.FC = () => {
                 {item.name}
               </NavLink>
             ))}
-            <Link to="/contact" className="btn-primary text-sm">
-              Get Free Quote
+            <Link
+              to="https://calendly.com/ateamedventures-info/30min"
+              className="btn-primary text-sm"
+              target="_blank"
+            >
+              Free Consultation
             </Link>
           </nav>
 

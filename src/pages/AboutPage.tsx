@@ -453,8 +453,9 @@ const AboutPage: React.FC = () => {
               and goals.
             </p>
             <Link
-              to="/contact"
+              to="https://calendly.com/ateamedventures-info/30min"
               className="btn-primary bg-white text-primary-700 hover:bg-gray-100"
+              target="_blank"
             >
               Schedule a Consultation
             </Link>
