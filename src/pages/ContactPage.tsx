@@ -15,7 +15,7 @@ const ContactPage: React.FC = () => {
   return (
     <>
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-accent-400 to-accent-600 py-20 md:py-28">
+      <div className="bg-gradient-to-r from-primary-700 to-primary-900 py-20 md:py-28">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -117,7 +117,7 @@ const ContactPage: React.FC = () => {
                   <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
                   <div className="flex space-x-4">
                     <a
-                      href="#"
+                      href="https://www.facebook.com/ateamedventures/"
                       className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-accent-100 hover:text-accent-600 transition-colors"
                     >
                       <svg
@@ -133,21 +133,9 @@ const ContactPage: React.FC = () => {
                         ></path>
                       </svg>
                     </a>
+
                     <a
-                      href="#"
-                      className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-accent-100 hover:text-accent-600 transition-colors"
-                    >
-                      <svg
-                        className="w-5 h-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-                      </svg>
-                    </a>
-                    <a
-                      href="#"
+                      href="https://www.instagram.com/ateamedventureshk/?hl=en"
                       className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-accent-100 hover:text-accent-600 transition-colors"
                     >
                       <svg
@@ -164,7 +152,7 @@ const ContactPage: React.FC = () => {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="https://www.youtube.com/@a-teamedventures463"
                       className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-accent-100 hover:text-accent-600 transition-colors"
                     >
                       <svg
@@ -209,7 +197,6 @@ const ContactPage: React.FC = () => {
           </div>
 
           <div className=" rounded-lg h-96 overflow-hidden">
-            {/* Placeholder for map - In a real implementation, you would use Google Maps or similar */}
             <div className=" flex items-center justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.7801987470525!2d114.14368077544566!3d22.24841694477379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404000057fc89c1%3A0xf5b091cb4f72b8f6!2sHing%20Wai%20Industrial%20Centre%2C%20Hing%20Wai%20Centre%2C%207%20Tin%20Wan%20Praya%20Rd%2C%20Tin%20Wan!5e0!3m2!1sen!2shk!4v1748499650636!5m2!1sen!2shk"

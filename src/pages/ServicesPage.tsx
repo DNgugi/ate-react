@@ -13,6 +13,11 @@ import {
   ChevronRight,
   CheckCircle,
   ArrowRight,
+  GraduationCap,
+  Caravan,
+  Waves,
+  TentTree,
+  TreePine,
 } from "lucide-react";
 
 interface Service {
@@ -35,9 +40,9 @@ const ServicesPage: React.FC = () => {
 
   const services: Service[] = [
     {
-      id: "team-building",
-      title: "Team Building Workshops",
-      icon: <Users size={24} />,
+      id: "school-camps",
+      title: "School Camps",
+      icon: <GraduationCap size={24} />,
       description:
         "Interactive workshops designed to build trust, improve communication, and enhance collaboration among team members. These structured experiences create opportunities for team members to connect in meaningful ways while developing critical teamwork skills.",
       features: [
@@ -52,8 +57,8 @@ const ServicesPage: React.FC = () => {
         "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      id: "adventure",
-      title: "Adventure Experiences",
+      id: "dofe",
+      title: "Duke of Edinburgh Award Expeditions",
       icon: <Compass size={24} />,
       description:
         "Outdoor and indoor adventures that challenge teams to work together, solve problems, and build lasting bonds. These experiential activities take team members out of their comfort zones and into environments where collaboration becomes essential for success.",
@@ -69,9 +74,9 @@ const ServicesPage: React.FC = () => {
         "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      id: "retreats",
-      title: "Corporate Retreats",
-      icon: <Briefcase size={24} />,
+      id: "fec",
+      title: "Family Edventure Camps",
+      icon: <Caravan size={24} />,
       description:
         "Customized multi-day retreats that combine strategic planning with team-building activities for maximum impact. These immersive experiences provide the time and space needed for teams to disconnect from daily pressures and focus on strengthening relationships and alignment.",
       features: [
@@ -86,9 +91,9 @@ const ServicesPage: React.FC = () => {
         "https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      id: "leadership",
-      title: "Leadership Development",
-      icon: <TrendingUp size={24} />,
+      id: "kayak",
+      title: "Kayak Tours",
+      icon: <Waves size={24} />,
       description:
         "Programs focused on developing leadership skills, emotional intelligence, and effective team management. These specialized experiences help leaders better understand their strengths, growth areas, and impact on team dynamics.",
       features: [
@@ -103,9 +108,9 @@ const ServicesPage: React.FC = () => {
         "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      id: "innovation",
-      title: "Innovation Workshops",
-      icon: <Zap size={24} />,
+      id: "sai-wan",
+      title: "Sai Wan Overnight Camps",
+      icon: <TentTree size={24} />,
       description:
         "Spark creativity and innovation through structured workshops that encourage out-of-the-box thinking and collaboration. These sessions create space for teams to break through conventional thinking and develop fresh approaches to challenges.",
       features: [
@@ -120,9 +125,9 @@ const ServicesPage: React.FC = () => {
         "https://images.pexels.com/photos/7413915/pexels-photo-7413915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      id: "communication",
-      title: "Communication Training",
-      icon: <MessageCircle size={24} />,
+      id: "cheung-chau",
+      title: "Cheung Chau Day Trips",
+      icon: <TreePine size={24} />,
       description:
         "Improve team communication through specialized training that addresses barriers and enhances understanding. These programs equip team members with the skills to express ideas clearly, listen effectively, and navigate difficult conversations.",
       features: [
@@ -137,8 +142,8 @@ const ServicesPage: React.FC = () => {
         "https://images.pexels.com/photos/7648045/pexels-photo-7648045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      id: "recognition",
-      title: "Recognition Programs",
+      id: "certification",
+      title: "Certification Programs",
       icon: <Award size={24} />,
       description:
         "Design and implementation of recognition systems that boost morale, increase engagement, and celebrate achievements. These programs create structured approaches to acknowledging contributions and reinforcing desired behaviors and outcomes.",
@@ -154,9 +159,9 @@ const ServicesPage: React.FC = () => {
         "https://images.pexels.com/photos/3184429/pexels-photo-3184429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      id: "virtual",
-      title: "Virtual Team Building",
-      icon: <Calendar size={24} />,
+      id: "corporate",
+      title: "Corporate Team Building",
+      icon: <Briefcase size={24} />,
       description:
         "Remote-friendly activities and workshops designed specifically for distributed teams and remote workers. These experiences create connection and engagement regardless of physical location, helping remote teams develop the cohesion needed for high performance.",
       features: [
@@ -177,7 +182,7 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-accent-400 to-accent-600 py-20 md:py-28">
+      <div className="bg-gradient-to-r from-primary-700 to-primary-900 py-20 md:py-28">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -189,8 +194,8 @@ const ServicesPage: React.FC = () => {
               Our Programs
             </h1>
             <p className="text-white/80 text-lg md:text-xl">
-              Highly customizable and comprehensive outdoor education programs tailored to match your unique
-              challenges, goals, and needs.
+              Highly customizable and comprehensive outdoor education programs
+              tailored to match your unique challenges, goals, and needs.
             </p>
           </motion.div>
         </div>
@@ -213,9 +218,9 @@ const ServicesPage: React.FC = () => {
               Transformative Outdoor Experiences
             </h2>
             <p className="text-gray-700">
-              Each of our programs are designed to address specific team needs
-              while delivering measurable results and lasting impact. Click on a
-              program to learn more.
+              Each of our programs is designed to address your specific needs
+              while delivering measurable results and creating lasting impact.
+              Click on a program to learn more.
             </p>
           </motion.div>
 
@@ -435,7 +440,7 @@ const ServicesPage: React.FC = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://ateamedventures.com/wp-content/uploads/2024/08/IMG_1239-scaled.jpg"
                 alt="Team collaboration"
                 className="rounded-lg shadow-xl"
               />
@@ -488,13 +493,15 @@ const ServicesPage: React.FC = () => {
 
               <div className="relative z-10">
                 <p className="text-gray-700 text-lg md:text-xl italic mb-6">
-                  "The corporate retreat organized by A Team Edventures was
-                  truly transformative for our leadership team. The facilitators
-                  skillfully guided us through a series of challenges that
-                  illuminated our strengths and growth areas as individuals and
-                  as a team. Six months later, we're still applying the insights
-                  and communication techniques we learned. I can't recommend
-                  their services highly enough."
+                  "I was going to write an email to thank you and your whole
+                  team. The girls have had an absolute blast on both their
+                  camps. They have not stopped talking about all the adventures
+                  and really had such a good time. I am so appreciative of your
+                  team's skill, effort and care looking after them and teaching
+                  them new skills. The photos were all so great, I want to go on
+                  one of the camps!! The kids will definitely be back. It has
+                  been their favorite of all the outdoor adventure camps they
+                  have ever done whilst in HK!"
                 </p>
 
                 <div className="flex items-center">
@@ -504,8 +511,8 @@ const ServicesPage: React.FC = () => {
                     className="w-12 h-12 rounded-full object-cover mr-4"
                   />
                   <div>
-                    <p className="font-bold text-gray-900">Sarah Johnson</p>
-                    <p className="text-primary-600">CEO, Innovate Solutions</p>
+                    <p className="font-bold text-gray-900">Corina W.</p>
+                    <p className="text-primary-600">Parent, Family Edventure Camp</p>
                   </div>
                 </div>
               </div>

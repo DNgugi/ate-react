@@ -1,7 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
-import Logo from '../common/Logo';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Youtube,
+} from "lucide-react";
+import Logo from "../common/Logo";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -15,21 +23,37 @@ const Footer: React.FC = () => {
               <Logo color="text-white" />
             </Link>
             <p className="text-gray-400 text-sm mt-4">
-              A Team Edventures specializes in transformative team experiences, 
-              fostering collaboration, innovation, and leadership through 
-              expertly designed adventures.
+              A Team Edventures specializes in transformative outdoor learning
+              experiences, fostering collaboration, innovation, and leadership
+              through expertly designed adventure programs.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/ateamedventures/"
+                className="text-accent-400 hover:text-white transition-colors"
+                aria-label="Facebook"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
+              <a
+                href="https://www.youtube.com/@a-teamedventures463"
+                className="text-accent-400 hover:text-white transition-colors"
+                aria-label="YouTube"
+              >
+                <Youtube size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/ateamedventureshk/?hl=en"
+                className="text-accent-400 hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/company/ateam-edventures/"
+                className="text-accent-400 hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={20} />
               </a>
             </div>
@@ -39,27 +63,42 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/about"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/services"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/blog"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/contact"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
                   Contact
                 </Link>
               </li>
@@ -70,17 +109,26 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/privacy-policy"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/terms-of-service" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/terms-of-service"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link to="/cookie-policy" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/cookie-policy"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
                   Cookie Policy
                 </Link>
               </li>
@@ -91,20 +139,36 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin size={18} className="text-primary-500 mr-2 mt-0.5 flex-shrink-0" />
+                <MapPin
+                  size={18}
+                  className="text-primary-500 mr-2 mt-0.5 flex-shrink-0"
+                />
                 <span className="text-gray-400 text-sm">
-                  123 Team Building Avenue, Adventure City, TX 12345
+                  33/F, Unit 3319-20, Hing Wai Centre, <br />7 Tin Wan Praya
+                  Road, Aberdeen, Hong Kong.
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone size={18} className="text-primary-500 mr-2 flex-shrink-0" />
-                <a href="tel:+11234567890" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  (123) 456-7890
+                <Phone
+                  size={18}
+                  className="text-primary-500 mr-2 flex-shrink-0"
+                />
+                <a
+                  href="tel:+85264669949"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  +852 6466 9949
                 </a>
               </li>
               <li className="flex items-center">
-                <Mail size={18} className="text-primary-500 mr-2 flex-shrink-0" />
-                <a href="mailto:info@ateamedventures.com" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Mail
+                  size={18}
+                  className="text-primary-500 mr-2 flex-shrink-0"
+                />
+                <a
+                  href="mailto:info@ateamedventures.com"
+                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                >
                   info@ateamedventures.com
                 </a>
               </li>

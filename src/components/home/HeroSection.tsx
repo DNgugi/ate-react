@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative min-h-screen flex items-center bg-gradient-to-r from-accent-600 to-accent-400 overflow-hidden">
+    <div className="hero relative min-h-screen flex items-center bg-gradient-to-r from-accent-600 to-accent-400 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute h-96 w-96 rounded-full bg-white/30 -top-20 -left-20 blur-3xl"></div>
@@ -20,29 +20,19 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center lg:text-left"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-white/10 text-white text-sm font-medium mb-6">
-              Transformative outdoor experiences
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Outdoor Education Experiences
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight mb-6">
+              Outdoor Edventure Experiences
             </h1>
-            <p className="text-lg md:text-xl text-white/80 mb-8 max-w-lg mx-auto lg:mx-0">
-              Expertly crafted, highly customizable experiences for families,
-              schools and corporate organisations that foster collaboration,
-              boost morale, and drive personal development.
+            <p className="text-lg md:text-xl text-secondary mb-8 max-w-lg mx-auto lg:mx-0">
+              Expertly crafted, highly customizable and engaging outdoor
+              experiences for parents, schools and corporate organisations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
                 to="/services"
-                className="btn-primary bg-white text-primary-700 hover:bg-gray-100"
+                className="btn-primary bg-secondary text-white hover:bg-gray-100"
               >
                 Explore Our Programs
-              </Link>
-              <Link
-                to="/contact"
-                className="btn-secondary bg-transparent text-white border-white hover:bg-white/10"
-              >
-                Get in Touch
               </Link>
             </div>
           </motion.div>
@@ -55,7 +45,7 @@ const HeroSection: React.FC = () => {
           >
             <div className="relative rounded-xl overflow-hidden shadow-2xl">
               <img
-                src="https://ateamedventures.com/wp-content/uploads/2024/08/IMG_2448-1-scaled.jpg"
+                src="https://ateamedventures.com/wp-content/uploads/2024/08/IMG_0025-scaled.jpeg"
                 alt="Team collaboration"
                 className="w-full h-auto object-cover"
               />
@@ -63,21 +53,20 @@ const HeroSection: React.FC = () => {
 
               <div className="absolute bottom-0 left-0 p-6">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-accent-500 text-white mb-2">
-                  Featured Program
+                  Featured Event
                 </span>
                 <h3 className="text-xl text-white font-bold mb-1">
-                  School Programs
+                  Cheung Chau Kayaking Day Trip
                 </h3>
                 <p className="text-white/80 text-sm mb-3">
-                  Our curriculum matching, highly experienced instructors and
-                  beautiful locations across Hong Kong and China are everything
-                  you need for your upcoming school camp!
+                  Starting at just HKD 500, take a trip around this beautiful
+                  island, just 40 minutes by ferry from Central!
                 </p>
                 <Link
-                  to="/services"
+                  to="https://api.whatsapp.com/send?phone=85264669949"
                   className="inline-flex items-center text-white text-sm font-medium hover:underline"
                 >
-                  Learn more <ChevronRight size={16} className="ml-1" />
+                  WhatsApp Us <ChevronRight size={16} className="ml-1" />
                 </Link>
               </div>
             </div>

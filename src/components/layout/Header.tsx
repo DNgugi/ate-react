@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../../logo.png";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const Header: React.FC = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Programs", path: "/programs" },
+    { name: "Programs", path: "/services" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -37,18 +38,14 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md py-3" : "bg-white py-5"
+        scrolled ? "bg-secondary-950 shadow-md py-3" : "bg-secondary-950 py-5"
       }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
             {/* <Logo color={scrolled ? "text-primary-700" : "text-white"} /> */}
-            <img
-              src="https://ateamedventures.com/wp-content/uploads/2024/07/cropped-A-TEAM-LOGO_VERTICAL.png"
-              width={50}
-              height={50}
-            />
+            <img src={logo} width={150} />
           </Link>
 
           {/* Desktop Navigation */}

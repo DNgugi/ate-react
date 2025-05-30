@@ -5,19 +5,19 @@ export default {
     extend: {
       colors: {
         secondary: {
-          50: "#f4f3ff",
-          100: "#ebe8ff",
-          200: "#d9d5ff",
-          300: "#bdb3ff",
-          400: "#9c88fd",
-          500: "#7d57fb",
-          600: "#6a31f2",
-          700: "#5e23de",
-          800: "#4e1dba",
-          900: "#421999",
-          950: "#260e67",
+          50: "#f3f7fc",
+          100: "#e6f0f8",
+          200: "#c8dfef",
+          300: "#98c4e1",
+          400: "#61a5cf",
+          500: "#3c8abb",
+          600: "#2c6f9d",
+          700: "#245880",
+          800: "#224c6a",
+          900: "#214159",
+          950: "#162a3c",
         },
-      primary: {
+        primary: {
           50: "#f1fcf2",
           100: "#dff9e2",
           200: "#c1f1c7",
@@ -58,19 +58,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: [
-          "Nunito",
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "sans-serif",
-        ],
-        heading: ["Poppins", "ui-sans-serif", "system-ui"],
+        sans: ["Montserrat", "sans-serif"],
+        heading: ["Montserrat", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out forwards",

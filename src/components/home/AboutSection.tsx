@@ -5,12 +5,11 @@ import { Check } from "lucide-react";
 
 const AboutSection: React.FC = () => {
   const benefits = [
-    "Enhanced team communication and collaboration",
-    "Increased employee engagement and satisfaction",
-    "Improved problem-solving and creative thinking",
-    "Stronger interpersonal relationships",
-    "Greater team resilience and adaptability",
-    "Clearer understanding of team roles and dynamics",
+    "A strong culture of safety",
+    "A strong, experienced and diverse team",
+    "Bespoke highly customizable programs",
+    "Great locations, with great amenities",
+    "Reflection and Review based delivery",
   ];
 
   return (
@@ -69,22 +68,21 @@ const AboutSection: React.FC = () => {
               About Us
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-              We Build Stronger Teams Through Shared Experiences
+              We design and deliver exceptional programs in the outdoors
             </h2>
 
             <p className="text-gray-700 mb-6">
-              A Team Edventures was founded on a simple principle: teams that
-              play together, perform better together. Since 2012, we've been
-              helping organizations and schools transform their teams through
-              engaging, purposeful experiences designed to foster collaboration,
-              communication, and trust.
+              Since 2012, we've been helping organizations and schools transform
+              their learning processes through engaging outdoor experiences
+              designed to foster collaboration, communication, trust, and
+              participant development.
             </p>
 
             <p className="text-gray-700 mb-8">
               Our team of experienced facilitators and coaches bring diverse
               backgrounds in psychology, organizational development, outdoor
-              leadership, and business management to create custom-tailored
-              team-building solutions for your unique challenges and goals.
+              leadership, and client success management to create
+              custom-tailored programs for your unique vision and goals.
             </p>
 
             <div className="mb-8">

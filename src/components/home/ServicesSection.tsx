@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
-  Users,
+  TreePine,
   Award,
   Compass,
   Briefcase,
-  TrendingUp,
-  Zap,
-  MessageCircle,
-  Calendar,
+  GraduationCap,
+  TentTree,
+  Caravan,
+  Waves,
 } from "lucide-react";
 
 interface ServiceCardProps {
@@ -65,38 +65,39 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 const ServicesSection: React.FC = () => {
   const services = [
     {
-      icon: <Users size={24} />,
-      title: "Team Building Workshops",
+      icon: <GraduationCap size={24} />,
+      title: "School Programs & Camps",
       description:
         "Interactive workshops designed to build trust, improve communication, and enhance collaboration among team members.",
     },
     {
       icon: <Compass size={24} />,
-      title: "Adventure Experiences",
-      description:
-        "Outdoor and indoor adventures that challenge teams to work together, solve problems, and build lasting bonds.",
-    },
-    {
-      icon: <Briefcase size={24} />,
-      title: "Corporate Retreats",
+      title: "Duke of Edinburgh Award Expeditions",
       description:
         "Customized multi-day retreats that combine strategic planning with team-building activities for maximum impact.",
     },
     {
-      icon: <TrendingUp size={24} />,
-      title: "Leadership Development",
+      icon: <Caravan size={24} />,
+      title: "Family Edventure Camps",
+      description:
+        "Outdoor and indoor adventures that challenge teams to work together, solve problems, and build lasting bonds.",
+    },
+    {
+      icon: <Waves size={24} />,
+      title: "Kayak Tours",
       description:
         "Programs focused on developing leadership skills, emotional intelligence, and effective team management.",
     },
     {
-      icon: <Zap size={24} />,
-      title: "Innovation Workshops",
+      icon: <TentTree size={24} />,
+
+      title: "Sai Wan Overnight Camps",
       description:
-        "Spark creativity and innovation through structured workshops that encourage out-of-the-box thinking and collaboration.",
+        "Design and implementation training programs with certifications of competence for your students or staff to boost morale, increase engagement, and celebrate achievements.",
     },
     {
-      icon: <MessageCircle size={24} />,
-      title: "Communication Training",
+      icon: <TreePine size={24} />,
+      title: "Cheung Chau Day Trips",
       description:
         "Improve team communication through specialized training that addresses barriers and enhances understanding.",
     },
@@ -105,6 +106,12 @@ const ServicesSection: React.FC = () => {
       title: "Certification Programs",
       description:
         "Design and implementation training programs with certifications of competence for your students or staff to boost morale, increase engagement, and celebrate achievements.",
+    },
+    {
+      icon: <Briefcase size={24} />,
+      title: "Corporate Team Building",
+      description:
+        "Spark creativity and innovation through structured workshops that encourage out-of-the-box thinking and collaboration.",
     },
   ];
 
