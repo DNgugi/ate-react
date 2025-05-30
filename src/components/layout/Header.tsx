@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+// import Logo from "../common/Logo";
 import logo from "../../logo.png";
 
 const Header: React.FC = () => {
