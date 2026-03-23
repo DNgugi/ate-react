@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
             className="text-center lg:text-left"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight mb-6">
-              Outdoor Edventure Experiences
+              Start your Edventure Now
             </h1>
             <p className="text-lg md:text-xl text-secondary mb-8 max-w-lg mx-auto lg:mx-0">
               Expertly crafted, highly customizable and engaging outdoor
@@ -59,11 +59,11 @@ const HeroSection: React.FC = () => {
                   Cheung Chau Kayaking Day Trip
                 </h3>
                 <p className="text-white/80 text-sm mb-3">
-                  Starting at just HKD 500, take a trip around this beautiful
+                  Take a trip by sea kayak around the beautiful Cheung Chau
                   island, just 40 minutes by ferry from Central!
                 </p>
                 <Link
-                  to="https://api.whatsapp.com/send?phone=85264669949"
+                  to="https://api.whatsapp.com/send?phone=85264669949&text=Hi%2C%20I%20am%20interested%20in%20kayaking%20around%20Cheung%20Chau%20Island%20with%20you."
                   className="inline-flex items-center text-white text-sm font-medium hover:underline"
                 >
                   WhatsApp Us <ChevronRight size={16} className="ml-1" />

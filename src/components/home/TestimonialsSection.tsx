@@ -29,7 +29,7 @@ const TestimonialsSection: React.FC = () => {
       id: 2,
       name: "Mr. Daryll",
       position: "Head Teacher",
-      company: "SWIS",
+      company: "School Client",
       // image:
       //   "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       quote:

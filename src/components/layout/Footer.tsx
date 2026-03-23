@@ -10,6 +10,7 @@ import {
   Youtube,
 } from "lucide-react";
 import Logo from "../common/Logo";
+import { BsWhatsapp } from "react-icons/bs";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -43,7 +44,7 @@ const Footer: React.FC = () => {
                 <Youtube size={20} />
               </a>
               <a
-                href="https://www.instagram.com/ateamedventureshk/?hl=en"
+                href="https://www.instagram.com/ateamedventureshongkong/"
                 className="text-accent-400 hover:text-white transition-colors"
                 aria-label="Instagram"
               >
@@ -55,6 +56,13 @@ const Footer: React.FC = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=85264669949&text=Hi%2C%20I%20am%20interested%20in%20your%20programs."
+                className="text-accent-400 hover:text-white transition-colors"
+                aria-label="WhatsApp"
+              >
+                <BsWhatsapp size={20} />
               </a>
             </div>
           </div>
@@ -84,14 +92,6 @@ const Footer: React.FC = () => {
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/blog"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  Blog
                 </Link>
               </li>
               <li>
@@ -183,7 +183,14 @@ const Footer: React.FC = () => {
             </p>
             <div className="mt-4 md:mt-0">
               <p className="text-gray-500 text-sm">
-                Designed and developed with ❤️
+                Designed and developed with ❤️ by{" "}
+                <a
+                  href="https://www.encantador.co"
+                  target="_blank"
+                  className="text-primary-600 hover:text-primary-800 text-sm"
+                >
+                  Studio Encantador
+                </a>
               </p>
             </div>
           </div>

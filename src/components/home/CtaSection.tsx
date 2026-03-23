@@ -21,17 +21,17 @@ const CtaSection: React.FC = () => {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready For Your Next Program?
+            Ready For Your Next Outdoor Experience?
           </h2>
           <p className="text-lg text-white/80 mb-8">
-            Whether you're looking to take your kids on a camping adventure,
-            improve communication, boost morale, or develop skills, get in touch
-            today to start your journey towards a rewarding outdoor learning
-            experience.
+            Whether you're looking to plan a school trip, take your friends or
+            family on a adventure, develop skills or just visit on of our bases
+            to enjoy the outdoors, get in touch today to start your journey
+            towards a rewarding outdoor experience.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              to="https://calendly.com/ateamedventures-info/30min"
+              to="https://calendly.com/ateamedventures-info/program-consultation"
               className="btn-primary bg-white text-primary-700 hover:bg-gray-100"
               target="_blank"
             >
@@ -52,11 +52,11 @@ const CtaSection: React.FC = () => {
               <p className="text-white/80 text-sm">Satisfied Clients</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl font-bold text-white">12+</p>
+              <p className="text-3xl font-bold text-white">10+</p>
               <p className="text-white/80 text-sm">Years Experience</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl font-bold text-white">98%</p>
+              <p className="text-3xl font-bold text-white">98%+</p>
               <p className="text-white/80 text-sm">Client Satisfaction</p>
             </div>
           </div>

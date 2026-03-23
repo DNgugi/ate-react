@@ -47,7 +47,7 @@ const AboutSection: React.FC = () => {
                   </div>
                   <div className="text-center">
                     <span className="block text-3xl font-bold text-primary-600">
-                      12+
+                      10+
                     </span>
                     <span className="text-sm text-gray-600">
                       Years Experience

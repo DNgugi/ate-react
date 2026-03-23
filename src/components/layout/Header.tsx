@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 // import Logo from "../common/Logo";
 import logo from "../../logo.png";
@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Programs", path: "/services" },
+    { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
               </NavLink>
             ))}
             <Link
-              to="https://calendly.com/ateamedventures-info/30min"
+              to="https://calendly.com/ateamedventures-info/program-consultation"
               className="btn-primary text-sm"
               target="_blank"
             >

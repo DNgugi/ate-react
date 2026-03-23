@@ -71,6 +71,7 @@ const ContactForm: React.FC = () => {
       setIsSubmitting(true);
 
       // Simulate form submission
+
       setTimeout(() => {
         setIsSubmitting(false);
         setSubmitted(true);

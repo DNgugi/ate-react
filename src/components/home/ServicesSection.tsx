@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { GiCanoe, GiIsland } from "react-icons/gi";
+
 import {
-  TreePine,
   Award,
   Compass,
   Briefcase,
   GraduationCap,
   TentTree,
   Caravan,
-  Waves,
 } from "lucide-react";
 
 interface ServiceCardProps {
@@ -65,53 +65,53 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 const ServicesSection: React.FC = () => {
   const services = [
     {
+      title: "School Camps",
       icon: <GraduationCap size={24} />,
-      title: "School Programs & Camps",
       description:
-        "Interactive workshops designed to build trust, improve communication, and enhance collaboration among team members.",
+        "Our school camps are designed to integrate with your curriculum and help your students build trust, improve communication, and enhance collaboration using adventure as a base. ",
     },
     {
-      icon: <Compass size={24} />,
       title: "Duke of Edinburgh Award Expeditions",
+      icon: <Compass size={24} />,
       description:
-        "Customized multi-day retreats that combine strategic planning with team-building activities for maximum impact.",
+        "We support DofE programs with a wide range of options for hiking and kayaking based expeditions, as well as pre-expedition training supplied by our experienced instructors",
     },
     {
-      icon: <Caravan size={24} />,
       title: "Family Edventure Camps",
+      icon: <Caravan size={24} />,
       description:
-        "Outdoor and indoor adventures that challenge teams to work together, solve problems, and build lasting bonds.",
+        "Our Sai Wan base is the perfect getaway for you and your family. Our base offers equipment rental and WASH facilities, with optional indoor accommodation and guided experiences ",
     },
     {
-      icon: <Waves size={24} />,
       title: "Kayak Tours",
+      icon: <GiCanoe size={24} />,
       description:
-        "Programs focused on developing leadership skills, emotional intelligence, and effective team management.",
+        "Our experienced and certified kayak guides can take you kayaking around some scenic locations in Hong Kong",
     },
     {
-      icon: <TentTree size={24} />,
-
       title: "Sai Wan Overnight Camps",
+      icon: <TentTree size={24} />,
       description:
-        "Design and implementation training programs with certifications of competence for your students or staff to boost morale, increase engagement, and celebrate achievements.",
+        "Come camping at our rustic Sai Wan base where we offer our base for your exploration of the area.",
     },
     {
-      icon: <TreePine size={24} />,
+      id: "cheung-chau",
       title: "Cheung Chau Day Trips",
+      icon: <GiIsland size={24} />,
       description:
-        "Improve team communication through specialized training that addresses barriers and enhances understanding.",
+        "Cheung Chau Island is just 40 minutes by fast ferry from Central piers and offers an excellent exploration of Hong Kong culture.",
     },
     {
-      icon: <Award size={24} />,
       title: "Certification Programs",
+      icon: <Award size={24} />,
       description:
-        "Design and implementation training programs with certifications of competence for your students or staff to boost morale, increase engagement, and celebrate achievements.",
+        "From our Sai Wan and Cheung Chau bases, we offer certification courses to help you develop your skills and competencies.",
     },
     {
-      icon: <Briefcase size={24} />,
       title: "Corporate Team Building",
+      icon: <Briefcase size={24} />,
       description:
-        "Spark creativity and innovation through structured workshops that encourage out-of-the-box thinking and collaboration.",
+        "These workshops designed specifically for corporate teams, helping your team develop the cohesion needed for high performance.",
     },
   ];
 

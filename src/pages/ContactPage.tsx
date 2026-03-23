@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "../components/contact/ContactForm";
+import { BsWhatsapp } from "react-icons/bs";
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
@@ -167,6 +168,13 @@ const ContactPage: React.FC = () => {
                           clipRule="evenodd"
                         ></path>
                       </svg>
+                    </a>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=85264669949&text=Hi%2C%20I%20am%20interested%20in%20your%20programs."
+                      className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-accent-100 hover:text-accent-600 transition-colors"
+                      aria-label="WhatsApp"
+                    >
+                      <BsWhatsapp size={20} />
                     </a>
                   </div>
                 </div>

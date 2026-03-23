@@ -1,23 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { GiCanoe, GiIsland } from "react-icons/gi";
+
 import {
-  Users,
   Award,
   Compass,
   Briefcase,
-  TrendingUp,
-  Zap,
-  MessageCircle,
-  Calendar,
+  
   ChevronRight,
   CheckCircle,
   ArrowRight,
   GraduationCap,
   Caravan,
-  Waves,
   TentTree,
-  TreePine,
 } from "lucide-react";
 
 interface Service {
@@ -44,136 +40,132 @@ const ServicesPage: React.FC = () => {
       title: "School Camps",
       icon: <GraduationCap size={24} />,
       description:
-        "Interactive workshops designed to build trust, improve communication, and enhance collaboration among team members. These structured experiences create opportunities for team members to connect in meaningful ways while developing critical teamwork skills.",
+        "Our school camps are designed to integrate with your curriculum and help your students build trust, improve communication, and enhance collaboration using adventure as a base. These structured experiences create opportunities for your students to connect in meaningful ways while developing critical teamwork skills.",
       features: [
         "Problem-solving challenges",
         "Communication exercises",
         "Trust-building activities",
-        "Personality assessments and discussions",
-        "Goal alignment workshops",
+        "Personal development",
+        "Curriculum matching",
         "Conflict resolution training",
       ],
       image:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/31494982/pexels-photo-31494982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       id: "dofe",
       title: "Duke of Edinburgh Award Expeditions",
       icon: <Compass size={24} />,
       description:
-        "Outdoor and indoor adventures that challenge teams to work together, solve problems, and build lasting bonds. These experiential activities take team members out of their comfort zones and into environments where collaboration becomes essential for success.",
+        "Our Sai Wan base, located in the Sai Kung Country park, offers a wide range of options for hiking and kayaking based expeditions, as well as pre-expedition training supplied by our experienced instructors",
       features: [
-        "Guided wilderness expeditions",
-        "Urban scavenger hunts",
-        "Ropes courses and climbing challenges",
-        "Team-based competitions",
-        "Survival scenario simulations",
-        "Guided reflection and learning transfer",
+        "Wilderness expeditions",
+        "Team-based collaboration",
+        "Survival skill development",
+        "Personal development",
+        "Duke of Edinburgh Award qualification",
+        "Pre-expedition training and development",
       ],
       image:
-        "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/7624985/pexels-photo-7624985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       id: "fec",
       title: "Family Edventure Camps",
       icon: <Caravan size={24} />,
       description:
-        "Customized multi-day retreats that combine strategic planning with team-building activities for maximum impact. These immersive experiences provide the time and space needed for teams to disconnect from daily pressures and focus on strengthening relationships and alignment.",
+        "Our Sai Wan base is the perfect getaway for you and your family. Our base offers equipment rental and WASH facilities, with optional indoor accommodation and guided experiences ",
       features: [
-        "Luxury or rustic venue arrangements",
-        "Facilitated strategic planning sessions",
-        "Team building activities and challenges",
-        "Wellness components (yoga, meditation)",
-        "Catered meals and accommodations",
-        "Follow-up implementation planning",
+        "Rustic venue arrangements",
+        "Facilitated outdoor activity sessions",
+        "Indoor accommodation",
+        "Equipment rentals",
+        "Catered meals and accommodation",
       ],
       image:
-        "https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/5480838/pexels-photo-5480838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       id: "kayak",
       title: "Kayak Tours",
-      icon: <Waves size={24} />,
+      icon: <GiCanoe size={24} />,
       description:
-        "Programs focused on developing leadership skills, emotional intelligence, and effective team management. These specialized experiences help leaders better understand their strengths, growth areas, and impact on team dynamics.",
+        "Our experienced and certified kayak guides can take you kayaking from our bases in Sai Wan and Cheung Chau to sorrounding islands and areas such as the geo-park, Lamma Island, Lantau Island and many more",
       features: [
-        "360° leadership assessments",
-        "Emotional intelligence training",
-        "Coaching and mentoring skills",
-        "Decision-making frameworks",
-        "Change management techniques",
-        "One-on-one executive coaching",
+        "Kayak to Lamma Island",
+        "Kayak to Lantau Island",
+        "Kayak to Snoopy Island, Sai Wan",
+        "Kayak to Ham Tin Wan, Sai Wan",
+        "Kayak through the geo-park in Sai Kung",
+        "One-on-one kayak coaching",
       ],
       image:
-        "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/36519884/pexels-photo-36519884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       id: "sai-wan",
       title: "Sai Wan Overnight Camps",
       icon: <TentTree size={24} />,
       description:
-        "Spark creativity and innovation through structured workshops that encourage out-of-the-box thinking and collaboration. These sessions create space for teams to break through conventional thinking and develop fresh approaches to challenges.",
+        "Come camping at our rustic Sai Wan base where we offer our base for your exploration of the area, including a night walk to the purpose built star gazing site to get a glimpse of the beautiful night sky.",
       features: [
-        "Design thinking methodology",
-        "Creative problem-solving techniques",
-        "Ideation and brainstorming facilitation",
-        "Prototyping and concept testing",
-        "Innovation culture development",
-        "Cross-functional collaboration frameworks",
+        "Rustic venue",
+        "Facilitated outdoor activity sessions",
+        "Indoor accommodation",
+        "Equipment rentals",
+        "Catered meals and accommodation",
       ],
       image:
-        "https://images.pexels.com/photos/7413915/pexels-photo-7413915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2317460/pexels-photo-2317460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       id: "cheung-chau",
       title: "Cheung Chau Day Trips",
-      icon: <TreePine size={24} />,
+      icon: <GiIsland size={24} />,
       description:
-        "Improve team communication through specialized training that addresses barriers and enhances understanding. These programs equip team members with the skills to express ideas clearly, listen effectively, and navigate difficult conversations.",
+        "Cheung Chau Island is just 40 minutes by fast ferry from Central piers and offers an excellent exploration of Hong Kong culture, including ancient rock paintings, the Cheung Po Tsai cave, excellent beaches, wind surfing, numerous temples and it's famous Mini Great Wall ",
       features: [
-        "Active listening techniques",
-        "Constructive feedback methods",
-        "Conflict resolution strategies",
-        "Cross-cultural communication",
-        "Meeting facilitation skills",
-        "Presentation and persuasion training",
+        "Guided cultural tours",
+        "Gastronomical experiences",
+        "The mini great wall",
+        "Wind surfing",
+        "Cheung Po Tsai's pirate cave",
+        "Beach day",
       ],
       image:
-        "https://images.pexels.com/photos/7648045/pexels-photo-7648045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1110180/pexels-photo-1110180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       id: "certification",
       title: "Certification Programs",
       icon: <Award size={24} />,
       description:
-        "Design and implementation of recognition systems that boost morale, increase engagement, and celebrate achievements. These programs create structured approaches to acknowledging contributions and reinforcing desired behaviors and outcomes.",
+        "From our Sai Wan and Cheung Chau bases, we offer American Canoe Association coastal kayaking course certifications to get you started on your kayaking journey, as well as in house certifications for First Aid, Foraging, Survival skills, Map reading and navigation and collaborative learning",
       features: [
-        "Recognition program design",
+        "ACA Kayaking Certifications",
         "Peer-to-peer recognition systems",
-        "Achievement celebration events",
-        "Reward strategy development",
-        "Implementation and training",
-        "Program effectiveness measurement",
+        "Achievement celebration",
+        "Skills training programs",
+        "Competence based certification",
       ],
       image:
-        "https://images.pexels.com/photos/3184429/pexels-photo-3184429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/36346113/pexels-photo-36346113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
       id: "corporate",
       title: "Corporate Team Building",
       icon: <Briefcase size={24} />,
       description:
-        "Remote-friendly activities and workshops designed specifically for distributed teams and remote workers. These experiences create connection and engagement regardless of physical location, helping remote teams develop the cohesion needed for high performance.",
+        "Our team building workshops are designed specifically for corporate teams. These experiences create connection and engagement regardless of physical location, helping teams develop the cohesion needed for high performance.",
       features: [
-        "Virtual escape rooms and challenges",
-        "Remote team building games",
-        "Online collaboration workshops",
-        "Digital communication enhancement",
-        "Remote team culture development",
-        "Time zone-friendly scheduling",
+        "Team development challenges",
+        "Team building games",
+        "Collaboration workshops",
+        "Team communication development",
+        "Team culture development",
       ],
       image:
-        "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/7551175/pexels-photo-7551175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
   ];
 

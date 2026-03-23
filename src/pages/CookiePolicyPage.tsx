@@ -19,7 +19,7 @@ const CookiePolicyPage: React.FC = () => {
             <h1 className="text-white text-4xl font-bold mb-4">
               Cookie Policy
             </h1>
-            <p className="text-white/80">Last Updated: May 30, 2025</p>
+            <p className="text-white/80">Last Updated: March 1, 2026</p>
           </div>
         </div>
       </div>
@@ -220,7 +220,7 @@ const CookiePolicyPage: React.FC = () => {
             </h2>
             <p>
               If you have any questions about our use of cookies or other
-              technologies, please email us at privacy@ateamedventures.com or by
+              technologies, please email us at info@ateamedventures.com or by
               post to:
             </p>
             <p className="ml-4">
