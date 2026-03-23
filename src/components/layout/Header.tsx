@@ -55,18 +55,13 @@ const Header: React.FC = () => {
               <NavLink
                 key={item.path}
                 to={item.path}
-                className={({ isActive }) => `
-                  font-medium text-sm transition-colors duration-200
-                  ${
-                    scrolled || location.pathname !== "/"
-                      ? isActive
-                        ? "text-accent-600"
-                        : "text-primary-700 hover:text-accent-600"
-                      : isActive
-                      ? "text-accent"
-                      : "text-accent/90 hover:text-accent"
-                  }
-                `}
+                className={({ isActive }) =>
+                  `font-semibold text-base transition-all duration-200 text-white pb-0.5 ${
+                    isActive
+                      ? "border-b-2 border-white"
+                      : "border-b-2 border-transparent hover:border-white/70"
+                  }`
+                }
                 end={item.path === "/"}
               >
                 {item.name}
@@ -113,7 +108,7 @@ const Header: React.FC = () => {
                     key={item.path}
                     to={item.path}
                     className={({ isActive }) => `
-                      px-4 py-2 font-medium text-sm rounded-md
+                      px-4 py-2 font-semibold text-base rounded-md
                       ${
                         isActive
                           ? "bg-primary-50 text-primary-600"

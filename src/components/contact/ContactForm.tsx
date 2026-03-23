@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -209,7 +209,7 @@ const ContactForm: React.FC = () => {
               />
             </div>
 
-            <div className="col-span-2">
+            <div className="col-span-1 md:col-span-2">
               <label
                 htmlFor="service"
                 className="block text-sm font-medium text-gray-700 mb-1"
@@ -233,7 +233,7 @@ const ContactForm: React.FC = () => {
               </select>
             </div>
 
-            <div className="col-span-2">
+            <div className="col-span-1 md:col-span-2">
               <label
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700 mb-1"
