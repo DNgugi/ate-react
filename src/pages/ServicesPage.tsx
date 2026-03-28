@@ -7,7 +7,6 @@ import {
   Award,
   Compass,
   Briefcase,
-  
   ChevronRight,
   CheckCircle,
   ArrowRight,
@@ -36,18 +35,17 @@ const ServicesPage: React.FC = () => {
 
   const services: Service[] = [
     {
-      id: "school-camps",
-      title: "School Camps",
+      id: "school-programs",
+      title: "School Programs",
       icon: <GraduationCap size={24} />,
       description:
-        "Our school camps are designed to integrate with your curriculum and help your students build trust, improve communication, and enhance collaboration using adventure as a base. These structured experiences create opportunities for your students to connect in meaningful ways while developing critical teamwork skills.",
+        "Our school programs and camps are designed to integrate with your curriculum and help your students build trust, improve communication, and enhance collaboration using adventure as a base. These structured experiences create opportunities for your students to connect in meaningful ways while developing critical teamwork skills.",
       features: [
-        "Problem-solving challenges",
-        "Communication exercises",
-        "Trust-building activities",
-        "Personal development",
         "Curriculum matching",
-        "Conflict resolution training",
+        "Problem solving challenges",
+        "Communication exercises",
+        "Trust building activities",
+        "Personal development",
       ],
       image:
         "https://images.pexels.com/photos/31494982/pexels-photo-31494982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",

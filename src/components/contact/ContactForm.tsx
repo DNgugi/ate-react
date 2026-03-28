@@ -64,33 +64,38 @@ const ContactForm: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (validateForm()) {
       setIsSubmitting(true);
 
-      // Simulate form submission
-
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setSubmitted(true);
-
-        // Reset form
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          company: "",
-          message: "",
-          service: "",
+      try {
+        const res = await fetch("https://formspree.io/f/xdawrpqz", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
         });
 
-        // Reset success message after some time
-        setTimeout(() => {
-          setSubmitted(false);
-        }, 5000);
-      }, 1500);
+        if (res.ok) {
+          setSubmitted(true);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            company: "",
+            message: "",
+            service: "",
+          });
+          setTimeout(() => setSubmitted(false), 5000);
+        } else {
+          setErrors({ name: "Something went wrong. Please try again." });
+        }
+      } catch {
+        setErrors({ name: "Network error. Please try again." });
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -225,11 +230,14 @@ const ContactForm: React.FC = () => {
                 className="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50"
               >
                 <option value="">Select a program</option>
-                <option value="team-building">School Programs</option>
-                <option value="adventure">Adventure Experiences</option>
-                <option value="retreats">Corporate Programs</option>
-                <option value="leadership">Kayaking Meet Ups</option>
-                <option value="virtual">Team Building</option>
+                <option value="school-programs">School Programs</option>
+                <option value="DofE">Duke of Edinburgh Expeditions</option>
+                <option value="fec">Family Edventure Camps</option>
+                <option value="kayaking">Kayaking Tours</option>
+                <option value="saiwan-overnight">Sai Wan Overnight</option>
+                <option value="cc-daytrips">Cheung Chau Day Trip</option>
+                <option value="certifications">Certification Programs</option>
+                <option value="team-building">Team Building</option>
                 <option value="other">Other</option>
               </select>
             </div>

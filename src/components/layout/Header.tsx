@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X, } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 // import Logo from "../common/Logo";
 import logo from "../../logo.png";
@@ -121,10 +121,10 @@ const Header: React.FC = () => {
                   </NavLink>
                 ))}
                 <Link
-                  to="/contact"
+                  to="https://calendly.com/ateamedventures-info/program-consultation"
                   className="btn-primary text-sm w-full text-center mt-4"
                 >
-                  Get Free Quote
+                  Free Consultation
                 </Link>
               </nav>
             </div>

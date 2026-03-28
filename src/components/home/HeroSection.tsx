@@ -21,11 +21,12 @@ const HeroSection: React.FC = () => {
             className="text-center lg:text-left"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight mb-6">
-              Start your Edventure Now
+              Start your Next Edventure
             </h1>
             <p className="text-lg md:text-xl text-secondary mb-8 max-w-lg mx-auto lg:mx-0">
               Expertly crafted, highly customizable and engaging outdoor
-              experiences for parents, schools and corporate organisations.
+              experiences for individuals, families, schools and corporate
+              organisations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link

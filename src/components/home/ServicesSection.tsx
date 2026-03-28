@@ -65,10 +65,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 const ServicesSection: React.FC = () => {
   const services = [
     {
-      title: "School Camps",
+      title: "School Programs",
       icon: <GraduationCap size={24} />,
       description:
-        "Our school camps are designed to integrate with your curriculum and help your students build trust, improve communication, and enhance collaboration using adventure as a base. ",
+        "Our school programs and camps are designed to integrate with your curriculum and help your students build trust, improve communication, and enhance collaboration using adventure as a base. ",
     },
     {
       title: "Duke of Edinburgh Award Expeditions",

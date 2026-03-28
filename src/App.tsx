@@ -13,6 +13,7 @@ import CookiePolicyPage from './pages/CookiePolicyPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
+  
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
